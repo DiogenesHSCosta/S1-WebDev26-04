@@ -1,10 +1,10 @@
 
 document.getElementById('btn').addEventListener('click', (() =>{
-    var numero = parseInt(document.getElementById('numero').value)
-    var i = 0
-    while( numero > 0){
-        console.log(numero)
-        numero -=1
+    var num = parseInt(document.getElementById('numero').value)
+    console.clear()
+    for(i = num; i>0; i--){
+       if(num % i == 0){    
+            console.log(`O numero ${num} é divisivel por ${i}`)
+       }
     }
-    console.log(' ')
 }))
